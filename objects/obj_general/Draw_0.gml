@@ -1,0 +1,1 @@
+trace_draw(mouse_trace, 25, c_orange);

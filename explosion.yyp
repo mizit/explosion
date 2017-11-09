@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "495f5d76-065b-4000-b5e8-0e2c15e4d706",
+            "Value": {
+                "id": "4996d504-e391-4363-8031-57dcde26fbca",
+                "resourcePath": "views\\495f5d76-065b-4000-b5e8-0e2c15e4d706.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4f235c0c-5f6a-48f6-89cc-11e9a2d9888a",
             "Value": {
                 "id": "8a21a6e2-51b9-4c9c-b00c-1c4092cfdf80",
@@ -111,6 +119,14 @@
             }
         },
         {
+            "Key": "63a4371d-3110-4f07-befa-c67ae0257632",
+            "Value": {
+                "id": "ac23ea11-9735-4b1e-9411-d3adf23ef36a",
+                "resourcePath": "scripts\\trace_draw\\trace_draw.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "64930457-e818-4328-925b-8d96da23ba7a",
             "Value": {
                 "id": "5c653a64-28d3-4b87-b3e2-edc2dea6a2ca",
@@ -140,6 +156,14 @@
                 "id": "7f47b4ab-c01a-4e36-9fde-a80015ff4720",
                 "resourcePath": "views\\7c950975-8307-4184-a231-c02e8db9c549.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "82a49a8d-ed4d-4ec3-8f0b-a8de0fc45455",
+            "Value": {
+                "id": "0810a2be-8df8-460c-b70a-426bf33a7ac0",
+                "resourcePath": "scripts\\trace_point_add\\trace_point_add.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -199,6 +223,14 @@
             }
         },
         {
+            "Key": "c4e6dc12-78a2-425a-af08-d2eac3c9d020",
+            "Value": {
+                "id": "51447dc2-e9f3-41f5-8757-7e76ec4d510e",
+                "resourcePath": "scripts\\trace_create\\trace_create.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cb904f5c-38cc-4ca2-aeb0-f5767c6f5361",
             "Value": {
                 "id": "0b3e4a20-cb3e-406f-90cb-4330a4d8b9a0",
@@ -239,6 +271,14 @@
             }
         },
         {
+            "Key": "ddfc2e5d-6134-4abe-b71d-ae0c48dff4dd",
+            "Value": {
+                "id": "9ead5e3e-ea4f-4d3a-9452-8a42f831cfe3",
+                "resourcePath": "scripts\\trace_point_delete\\trace_point_delete.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e268c4d6-2089-4a68-b7c8-08d70be70dac",
             "Value": {
                 "id": "0cb250e6-692e-4777-8d0c-2756a9e2b1d6",
@@ -252,6 +292,22 @@
                 "id": "f87052b2-4888-4f43-82f0-dff63a570e16",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e6503171-08a8-4cde-81e6-354d0d056403",
+            "Value": {
+                "id": "1ac2b28a-1096-4726-8360-0db07c7d94dd",
+                "resourcePath": "views\\e6503171-08a8-4cde-81e6-354d0d056403.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f11279b3-452f-4929-9a9b-0eb188cec3d0",
+            "Value": {
+                "id": "2cdb5032-ab5d-4017-8c61-297b87c2fbbe",
+                "resourcePath": "scripts\\trace_delete\\trace_delete.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -272,11 +328,16 @@
         }
     ],
     "script_order": [
+        "e268c4d6-2089-4a68-b7c8-08d70be70dac",
         "d12890ca-9464-49ef-b8f7-7c579d597af8",
         "0b076f8b-a818-4d5c-b16c-9442849b3492",
         "8f72ceda-e89f-4bde-aa73-9ca871a1227b",
-        "e268c4d6-2089-4a68-b7c8-08d70be70dac",
-        "2bf084a8-0d11-4a40-870a-f5e8b86589eb"
+        "2bf084a8-0d11-4a40-870a-f5e8b86589eb",
+        "c4e6dc12-78a2-425a-af08-d2eac3c9d020",
+        "82a49a8d-ed4d-4ec3-8f0b-a8de0fc45455",
+        "ddfc2e5d-6134-4abe-b71d-ae0c48dff4dd",
+        "f11279b3-452f-4929-9a9b-0eb188cec3d0",
+        "63a4371d-3110-4f07-befa-c67ae0257632"
     ],
     "tutorial": ""
 }
