@@ -10,31 +10,37 @@ enum BEAM
 }
 
 beams = ds_list_create();
+dust_beams = ds_list_create();
+dust_colors = ds_list_create();
 beams_num = 20;
 for (var i = 0; i < beams_num; i++)
 {
 	var l_speed = random(20);
-	ds_list_add(beams, beam_create(x, y, l_speed, 
-	random_range(360 * i / beams_num, 360 * (i + 1) / beams_num), l_speed / (room_speed / 6)));
+	var l_dir  = random_range(360 * i / beams_num, 360 * (i + 1) / beams_num);
+	l_dir = random(360);
+	ds_list_add(beams, beam_create(x, y, l_speed, l_dir, l_speed / (room_speed / 6)));
+	ds_list_add(dust_beams, beam_create(x, y, l_speed * 2, l_dir, l_speed / (room_speed / 12)));
+	var gray = 40 + i * 7;
+	ds_list_add(dust_colors, make_color_rgb(gray, gray, gray));
 }
 
-traces = ds_list_create();
+/*repeat (beams_num)
+{
+	var tmp_part = instance_create_depth(x, y, depth, obj_exp_part);
+	tmp_part.direction = random(360);
+	tmp_part.speed = 3 + random(6);
+}
+*/
+
+dust_ps = part_system_create();
+dust_pt = part_type_create();
+dust_em = part_emitter_create(dust_ps);
+dust_base = 30;
+part_type_alpha2(dust_pt, 1, 0);
+part_type_shape(dust_pt, pt_shape_smoke);
+part_type_color1(dust_pt, c_gray);
+part_type_size(dust_pt, 0.1, 0.2, 0.0, 0);
 
 
+//traces = ds_list_create();
 
-
-/*ps = part_system_create();
-
-pt = part_type_create();
-part_type_color1(pt, c_orange);
-part_type_shape(pt, pt_shape_pixel);
-part_type_gravity(pt, 3, 270);
-part_type_speed(pt, 20, 40, -2, 0);
-part_type_direction(pt, 0, 360, 0, 0);
-part_type_life(pt, room_speed / 6, room_speed / 3);
-part_type_size(pt, 1, 1, 0, 0);
-part_type_alpha2(pt, 1, 0);
-
-em = part_emitter_create(ps);
-part_emitter_region(ps, em, x, x, y, y, ps_shape_ellipse, ps_distr_gaussian);
-part_emitter_burst(ps, em, pt, 50);*/

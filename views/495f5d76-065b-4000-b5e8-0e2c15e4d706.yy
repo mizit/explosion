@@ -7,7 +7,8 @@
         "d12890ca-9464-49ef-b8f7-7c579d597af8",
         "0b076f8b-a818-4d5c-b16c-9442849b3492",
         "8f72ceda-e89f-4bde-aa73-9ca871a1227b",
-        "2bf084a8-0d11-4a40-870a-f5e8b86589eb"
+        "2bf084a8-0d11-4a40-870a-f5e8b86589eb",
+        "53f6530d-026a-4c16-962c-ba6a56bcf1cd"
     ],
     "filterType": "GMScript",
     "folderName": "beam",
